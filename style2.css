@@ -1,0 +1,159 @@
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    position: relative;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footer .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer .footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer .footer-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer .footer-section .contact span {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.footer .footer-section .socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #444;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+.footer .footer-section .socials a:hover {
+    background: #555;
+}
+
+.footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-section ul a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-section ul a:hover {
+    color: #aaa;
+}
+
+.footer .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer .footer-section form {
+    display: flex;
+}
+
+.footer .footer-section .text-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.footer .footer-section .btn {
+    padding: 10px;
+    background: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer .footer-section .btn:hover {
+    background: #444;
+}
+
+.footer-bottom {
+    padding: 10px;
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .astronaut {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 150px;
+    z-index: 0;
+}
+
+.footer .astronaut img {
+    width: 100%;
+    height: auto;
+}
